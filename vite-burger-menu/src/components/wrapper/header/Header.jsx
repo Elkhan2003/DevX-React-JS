@@ -22,15 +22,11 @@ export const Header = () => {
 					</ul>
 				</nav>
 				<div className="burger-menu" onClick={() => setIsOpen(!isOpen)}>
-					{/* <div className={isOpen ? "open" : ""} />
-						<div className={isOpen ? "open" : ""} />
-						<div className={isOpen ? "open" : ""} /> */}
-					<h1>MENU</h1>
+					<span className={isOpen ? "open" : ""} />
+					<span className={isOpen ? "open" : ""} />
+					<span className={isOpen ? "open" : ""} />
 				</div>
 			</div>
-			{/* <li>
-							<button onClick={() => setIsOpen(false)}>Close</button>
-						</li> */}
 		</>
 	);
 };
