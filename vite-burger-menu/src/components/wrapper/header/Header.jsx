@@ -6,14 +6,9 @@ export const Header = () => {
 
 	return (
 		<>
-			<div>
-				<h1>awdawd</h1>
+			<div className="header">
+				<h1>Logo</h1>
 				<nav>
-					<div className="burger-menu" onClick={() => setIsOpen(!isOpen)}>
-						<div className={isOpen ? "open" : ""} />
-						<div className={isOpen ? "open" : ""} />
-						<div className={isOpen ? "open" : ""} />
-					</div>
 					<ul className={isOpen ? "show" : ""}>
 						<li>
 							<a href="#">Home</a>
@@ -24,12 +19,18 @@ export const Header = () => {
 						<li>
 							<a href="#">Contact</a>
 						</li>
-						<li>
-							<button onClick={() => setIsOpen(false)}>Close</button>
-						</li>
 					</ul>
 				</nav>
+				<div className="burger-menu" onClick={() => setIsOpen(!isOpen)}>
+					{/* <div className={isOpen ? "open" : ""} />
+						<div className={isOpen ? "open" : ""} />
+						<div className={isOpen ? "open" : ""} /> */}
+					<h1>MENU</h1>
+				</div>
 			</div>
+			{/* <li>
+							<button onClick={() => setIsOpen(false)}>Close</button>
+						</li> */}
 		</>
 	);
 };
